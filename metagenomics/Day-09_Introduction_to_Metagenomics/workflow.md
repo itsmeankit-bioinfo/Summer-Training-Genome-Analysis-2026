@@ -1,6 +1,6 @@
 # Workflow
 
-## Metagenomics Workflow
+## Metagenomic Quality Control Workflow
 
 Environmental Sample
 
@@ -14,7 +14,7 @@ Library Preparation
 
 ↓
 
-NGS Sequencing
+Next Generation Sequencing (NGS)
 
 ↓
 
@@ -34,45 +34,7 @@ FastP
 
 ↓
 
-High-quality Reads
-
-↓
-
-Metagenome Assembly
-
-↓
-
-Genome Binning
-
-↓
-
-Taxonomic Classification
-
-↓
-
-Functional Annotation
-
----
-
-## Quality Control Workflow
-
-Raw Reads
-
-↓
-
-FastQC
-
-↓
-
-Identify Quality Issues
-
-↓
-
-FastP
-
-↓
-
-Trimmed Reads
+Trimmed FASTQ Files
 
 ↓
 
@@ -80,7 +42,64 @@ FastQC Validation
 
 ↓
 
-Ready for Assembly
+High-quality Reads
+
+↓
+
+Metagenome Assembly
+
+---
+
+## Detailed Workflow
+
+### Step 1 — Sample Collection
+
+Environmental samples such as soil, water, marine samples, or the human gut are collected.
+
+↓
+
+### Step 2 — DNA Extraction
+
+Total DNA is extracted directly from the environmental sample.
+
+↓
+
+### Step 3 — Sequencing
+
+The extracted DNA is sequenced using Next Generation Sequencing (NGS).
+
+↓
+
+### Step 4 — Quality Assessment
+
+FastQC evaluates sequencing quality.
+
+↓
+
+### Step 5 — Read Preprocessing
+
+FastP removes:
+
+- Adapter sequences
+- Low-quality bases
+- Short reads
+
+↓
+
+### Step 6 — Validation
+
+FastQC is run again to verify quality improvement.
+
+↓
+
+### Step 7 — Downstream Analysis
+
+The cleaned reads are now ready for:
+
+- Metagenome Assembly
+- Taxonomic Classification
+- Functional Annotation
+- Genome Binning
 
 ---
 
@@ -92,4 +111,4 @@ Ready for Assembly
 
 ✔ FastP reports
 
-✔ Trimmed FASTQ files
+✔ Trimmed FASTQ filess

@@ -1,9 +1,9 @@
 # Screenshots
 
-Suggested screenshots:
+Include screenshots of:
 
 - FastQC execution
-- FastQC HTML report
+- FastQC report
 - FastP execution
 - FastP report
 - Terminal output

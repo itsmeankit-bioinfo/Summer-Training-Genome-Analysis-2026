@@ -1,35 +1,33 @@
 # Case Study
 
-# Exploring the Human Gut Microbiome
+# Human Gut Microbiome Analysis
 
 ## Background
 
-Researchers wanted to understand the diversity of microorganisms present in the human gut.
+Researchers wanted to study the microbial diversity present in the human gut without culturing individual microorganisms.
 
 ---
 
 ## Problem
 
-Many gut microorganisms cannot be cultured in the laboratory.
-
-Traditional microbiological methods cannot identify the complete microbial community.
+Traditional microbiological methods fail to culture most microorganisms present in the gut.
 
 ---
 
 ## Solution
 
-Metagenomic sequencing was performed on DNA extracted directly from stool samples.
+DNA was extracted directly from stool samples and analyzed using shotgun metagenomic sequencing.
 
-Quality control was carried out using FastQC and FastP before downstream analysis.
+Quality assessment was performed using FastQC, followed by trimming with FastP before downstream analyses.
 
 ---
 
-## Real-world Example
+## Outcome
 
-Human gut microbiome studies have revealed links between microbial communities and diseases such as inflammatory bowel disease, obesity, and diabetes.
+High-quality sequencing reads were generated, enabling accurate metagenome assembly and microbial community analysis.
 
 ---
 
 ## Conclusion
 
-Metagenomics enables researchers to study entire microbial communities without culturing individual organisms.
+Quality control is an essential first step in every metagenomic analysis pipeline.

@@ -4,11 +4,11 @@
 
 ### fastqc: command not found
 
-Cause
+**Cause**
 
 FastQC is not installed or the Conda environment is inactive.
 
-Solution
+**Solution**
 
 ```bash
 conda activate bioinfo
@@ -21,11 +21,11 @@ fastqc --version
 
 ### fastp: command not found
 
-Cause
+**Cause**
 
 FastP is not installed.
 
-Solution
+**Solution**
 
 ```bash
 conda install bioconda::fastp
@@ -35,20 +35,20 @@ conda install bioconda::fastp
 
 ## Error 3
 
-Input FASTQ file not found
+Input FASTQ files not found
 
-Cause
+**Cause**
 
-Incorrect file path.
+Incorrect filename or wrong directory.
 
-Solution
+**Solution**
 
 ```bash
 pwd
 ls
 ```
 
-Verify the filenames.
+Verify that the sequencing files are present.
 
 ---
 
@@ -56,18 +56,18 @@ Verify the filenames.
 
 Poor-quality reads remain after trimming
 
-Cause
+**Cause**
 
-The trimming parameters may not be appropriate for the dataset.
+The trimming parameters may not remove all low-quality regions.
 
-Solution
+**Solution**
 
-Review FastQC reports and adjust FastP settings if necessary.
+Review the FastQC report and adjust FastP parameters if necessary.
 
 ---
 
-## Best Practices
+# Best Practices
 
-- Perform FastQC before and after trimming.
+- Always perform FastQC before and after trimming.
 - Keep original FASTQ files unchanged.
-- Review HTML reports before continuing.
+- Store trimmed reads separately.

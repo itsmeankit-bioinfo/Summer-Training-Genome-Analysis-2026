@@ -2,15 +2,17 @@
 
 # What is Metagenomics?
 
-Metagenomics is the study of the collective genetic material obtained directly from environmental samples without isolating or culturing individual microorganisms.
+Metagenomics is the study of the collective genetic material obtained directly from environmental samples without isolating or culturing microorganisms.
+
+Unlike traditional microbiology, metagenomics enables researchers to analyze all microorganisms present in a sample simultaneously.
 
 ---
 
 # Why is Metagenomics Important?
 
-Many microorganisms cannot be cultured in the laboratory.
+Many microorganisms cannot be cultured under laboratory conditions.
 
-Metagenomics enables researchers to study entire microbial communities directly from their natural environments.
+Metagenomics allows researchers to investigate microbial diversity directly from natural environments.
 
 ---
 
@@ -18,10 +20,10 @@ Metagenomics enables researchers to study entire microbial communities directly 
 
 - Human gut microbiome
 - Soil microbiology
-- Ocean microbiology
-- Wastewater analysis
-- Food safety
-- Disease surveillance
+- Marine ecosystems
+- Wastewater monitoring
+- Agriculture
+- Environmental surveillance
 
 ---
 
@@ -29,15 +31,24 @@ Metagenomics enables researchers to study entire microbial communities directly 
 
 | Genomics | Metagenomics |
 |-----------|--------------|
-| Single organism | Multiple organisms |
-| Pure culture | Environmental sample |
-| Individual genome | Mixed genomes |
+| Studies one organism | Studies microbial communities |
+| Pure culture required | Direct environmental samples |
+| Single genome | Mixed genomes |
+| Easier assembly | More complex assembly |
 
 ---
 
 # Environmental DNA (eDNA)
 
-Environmental DNA refers to genetic material collected directly from environmental samples such as soil, water, sediment, or air.
+Environmental DNA (eDNA) refers to DNA collected directly from environmental samples such as:
+
+- Soil
+- Water
+- Sediment
+- Air
+- Wastewater
+
+without isolating individual organisms.
 
 ---
 
@@ -55,7 +66,7 @@ Library Preparation
 
 ↓
 
-Sequencing
+NGS Sequencing
 
 ↓
 
@@ -67,7 +78,7 @@ Assembly
 
 ↓
 
-Binning
+Genome Binning
 
 ↓
 
@@ -79,21 +90,50 @@ Functional Annotation
 
 ---
 
-# Importance of Quality Control
+# Quality Control
 
-Quality control removes:
+Quality control is the first computational step after sequencing.
+
+Its purpose is to remove:
 
 - Adapter sequences
 - Low-quality bases
-- Contaminants
+- Short reads
 - Sequencing artifacts
 
-This improves downstream analyses.
+---
+
+# FastQC
+
+FastQC is a quality assessment tool used to evaluate raw sequencing reads.
+
+It provides reports on:
+
+- Per base quality
+- GC content
+- Sequence length distribution
+- Adapter contamination
+- Overrepresented sequences
+
+---
+
+# FastP
+
+FastP is an all-in-one FASTQ preprocessing tool.
+
+It performs:
+
+- Adapter trimming
+- Quality filtering
+- Base correction
+- Length filtering
+- HTML report generation
 
 ---
 
 # Key Takeaways
 
-- Metagenomics studies microbial communities.
-- Environmental DNA allows culture-independent analysis.
-- Quality control is the first computational step.
+- Metagenomics enables culture-independent microbial analysis.
+- Quality control is essential before downstream analyses.
+- FastQC identifies sequencing problems.
+- FastP improves sequencing read quality.

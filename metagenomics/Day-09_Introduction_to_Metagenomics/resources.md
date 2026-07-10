@@ -20,7 +20,7 @@
 ## Books
 
 - Bioinformatics Data Skills
-- Metagenomics for Microbiology
+- Metagenomics: Methods and Protocols
 
 ---
 

@@ -1,8 +1,8 @@
 # Figures
 
-Store workflow diagrams and illustrations related to:
+Include figures related to:
 
 - Metagenomic workflow
-- Quality control pipeline
-- Environmental DNA
-- Genomics vs Metagenomics comparison
+- Genomics vs Metagenomics
+- Quality control workflow
+- Environmental DNA (eDNA)

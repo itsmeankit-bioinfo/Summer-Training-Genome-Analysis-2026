@@ -1,83 +1,88 @@
 # Commands Used
 
-## Step 1 — Activate Conda Environment
+This practical introduced quality control tools used in metagenomic analysis.
+
+---
+
+# Step 1 — Activate Conda Environment
 
 ```bash
 conda activate bioinfo
 ```
 
-Purpose
+**Purpose**
 
-Activates the Conda environment containing the required bioinformatics tools.
+Activates the Conda environment containing FastQC and FastP.
 
 ---
 
-## Step 2 — Check Working Directory
+# Step 2 — Check Working Directory
 
 ```bash
 pwd
 ```
 
+**Purpose**
+
 Displays the current working directory.
 
 ---
 
-## Step 3 — List Input Files
+# Step 3 — List Input Files
 
 ```bash
 ls
 ```
 
-Verifies that paired-end FASTQ files are present.
+**Purpose**
+
+Displays the paired-end FASTQ files.
 
 ---
 
-## Step 4 — Run FastQC
+# Step 4 — Run FastQC
 
 ```bash
-fastqc sample_R1.fastq.gz sample_R2.fastq.gz
+fastqc module2-seq-R1.fastq.gz module2-seq-R2.fastq.gz
 ```
 
-Purpose
+**Purpose**
 
-Performs quality assessment on raw metagenomic reads.
+Performs quality assessment of raw sequencing reads before trimming.
 
 ---
 
-## Step 5 — Run FastP
+# Step 5 — Run FastP
 
 ```bash
 fastp \
--i sample_R1.fastq.gz \
--I sample_R2.fastq.gz \
--o sample_R1_trimmed.fastq.gz \
--O sample_R2_trimmed.fastq.gz \
--h fastp_report.html \
--j fastp_report.json
+-i module2-seq-R1.fastq.gz \
+-I module2-seq-R2.fastq.gz \
+-o module2-seq-R1-trimmed.fastq.gz \
+-O module2-seq-R2-trimmed.fastq.gz
 ```
 
-Purpose
+**Purpose**
 
-Removes adapters and low-quality bases before metagenomic assembly.
+Removes adapter sequences and low-quality bases from sequencing reads.
 
 ---
 
-## Step 6 — Run FastQC Again
+# Step 6 — Run FastQC on Trimmed Reads
 
 ```bash
-fastqc sample_R1_trimmed.fastq.gz sample_R2_trimmed.fastq.gz
+fastqc module2-seq-R1-trimmed.fastq.gz module2-seq-R2-trimmed.fastq.gz
 ```
 
-Purpose
+**Purpose**
 
-Verifies the quality improvement after trimming.
+Evaluates the quality of reads after preprocessing.
 
 ---
 
-## Expected Output
+# Expected Output
 
-- Trimmed FASTQ files
+- module2-seq-R1-trimmed.fastq.gz
+- module2-seq-R2-trimmed.fastq.gz
 - FastQC HTML reports
 - FastQC ZIP reports
-- FastP HTML report
-- FastP JSON report

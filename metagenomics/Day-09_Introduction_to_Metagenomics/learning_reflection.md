@@ -2,23 +2,27 @@
 
 ## What I Learned
 
-Today I learned the difference between genomics and metagenomics.
+Today I learned the basic concepts of metagenomics and how it differs from traditional genomics.
 
-I also understood why quality control is essential before assembling metagenomic datasets.
+I also understood the importance of performing quality assessment before any downstream metagenomic analysis.
+
+FastQC helps identify sequencing issues, while FastP improves sequencing quality through trimming and filtering.
 
 ---
 
 ## Challenges Faced
 
-Initially, I found metagenomic workflows more complex than single-genome analysis because multiple organisms are analyzed simultaneously.
+Initially, I found it difficult to understand how metagenomics differs from sequencing a single genome.
+
+After studying the complete workflow, I understood that metagenomics analyzes DNA from an entire microbial community rather than one organism.
 
 ---
 
 ## How I Solved Them
 
 - Compared genomics and metagenomics workflows.
-- Studied the complete metagenomic pipeline.
-- Practiced FastQC and FastP.
+- Reviewed FastQC reports.
+- Practiced running FastP.
 
 ---
 
@@ -26,4 +30,4 @@ Initially, I found metagenomic workflows more complex than single-genome analysi
 
 - Learn metagenome assembly.
 - Understand genome binning.
-- Explore microbial diversity analysis.
+- Explore taxonomic classification.

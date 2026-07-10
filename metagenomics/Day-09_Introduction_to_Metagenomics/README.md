@@ -1,28 +1,27 @@
-# Day 09 — Introduction to Metagenomics
+# Day 09 — Introduction to Metagenomics & Quality Control
 
-> **Training Module:** Metagenomics  
-> **Duration:** Day 9  
+> **Training Module:** Metagenomics
+> **Duration:** Day 9
 > **Tools Used:** FastQC, FastP, Ubuntu (WSL), Conda
 
 ---
 
 # Objective
 
-The objective of this practical was to understand the fundamentals of metagenomics, explore the complete metagenomic analysis workflow, and perform quality assessment and preprocessing of raw sequencing reads before downstream analyses.
+The objective of this practical was to understand the fundamentals of metagenomics, learn how metagenomic studies differ from whole genome sequencing, and perform quality assessment and preprocessing of raw sequencing reads before downstream analyses.
 
 ---
 
 # Topics Covered
 
 - Introduction to Metagenomics
-- Whole Genome Sequencing vs Metagenomics
+- Difference between Genomics and Metagenomics
 - Environmental DNA (eDNA)
-- Metagenomic Workflow
-- Sample Collection
-- DNA Extraction
+- Next Generation Sequencing (NGS)
 - Quality Control
 - FastQC
 - FastP
+- Metagenomic Analysis Workflow
 
 ---
 
@@ -30,19 +29,20 @@ The objective of this practical was to understand the fundamentals of metagenomi
 
 After completing this practical, I was able to:
 
-- Explain the concept of metagenomics.
-- Differentiate genomics and metagenomics.
+- Understand the concept of metagenomics.
+- Differentiate genomics from metagenomics.
 - Understand environmental DNA sequencing.
 - Perform quality assessment using FastQC.
-- Perform read preprocessing using FastP.
+- Trim sequencing reads using FastP.
+- Prepare sequencing reads for downstream analysis.
 
 ---
 
 # Why This Practical Matters
 
-Unlike genomics, metagenomics studies the collective genomes of all microorganisms present in an environmental sample.
+Metagenomics allows the study of entire microbial communities directly from environmental samples without culturing microorganisms.
 
-It enables researchers to study microbial communities without culturing organisms.
+Quality control ensures that only high-quality sequencing reads are used for downstream analyses, improving assembly accuracy.
 
 ---
 
@@ -56,11 +56,11 @@ DNA Extraction
 
 ↓
 
-Sequencing
+NGS Sequencing
 
 ↓
 
-Raw FASTQ
+Raw FASTQ Reads
 
 ↓
 
@@ -76,15 +76,15 @@ High-quality Reads
 
 ↓
 
-Metagenomic Assembly
+Metagenome Assembly
 
 ↓
 
-Binning
+Genome Binning
 
 ↓
 
-Taxonomic & Functional Analysis
+Functional Analysis
 
 ---
 
@@ -93,19 +93,19 @@ Taxonomic & Functional Analysis
 | File | Description |
 |------|-------------|
 | README.md | Practical overview |
-| notes.md | Theory and concepts |
-| commands.md | Commands executed |
-| workflow.md | Complete workflow |
+| notes.md | Theory notes |
+| commands.md | Commands used |
+| workflow.md | Workflow explanation |
 | common_errors.md | Troubleshooting |
-| learning_reflection.md | Personal learning |
+| learning_reflection.md | Learning summary |
 | resources.md | Learning resources |
-| case_study.md | Real-world application |
+| case_study.md | Practical application |
 
 ---
 
 # Software Used
 
-- Ubuntu
+- Ubuntu (WSL)
 - Conda
 - FastQC
 - FastP
@@ -115,20 +115,20 @@ Taxonomic & Functional Analysis
 # Skills Acquired
 
 - Metagenomics fundamentals
-- Quality control
+- Quality assessment
 - Read preprocessing
-- Microbial community analysis concepts
+- Linux command-line workflow
 
 ---
 
 # Real-world Applications
 
-- Human Microbiome
-- Environmental Monitoring
+- Human microbiome studies
+- Soil microbiology
+- Marine microbiology
 - Agriculture
-- Marine Biology
-- Wastewater Surveillance
-- Public Health
+- Wastewater monitoring
+- Clinical microbiology
 
 ---
 
@@ -138,8 +138,8 @@ Taxonomic & Functional Analysis
 Day-09_Introduction_to_Metagenomics/
 
 README.md
-commands.md
 notes.md
+commands.md
 workflow.md
 common_errors.md
 learning_reflection.md
@@ -156,8 +156,9 @@ figures/
 # Key Takeaways
 
 - Metagenomics studies mixed microbial communities.
-- Quality control is essential before downstream analysis.
-- FastQC and FastP remain foundational tools in metagenomic workflows.
+- FastQC evaluates sequencing quality.
+- FastP improves sequencing data by trimming low-quality regions.
+- Quality-controlled reads are essential for reliable downstream analyses.
 
 ---
 
@@ -168,5 +169,3 @@ figures/
 M.Sc. Bioinformatics
 
 Graphic Era University
-
-GitHub: itsmeankit-bioinfo
