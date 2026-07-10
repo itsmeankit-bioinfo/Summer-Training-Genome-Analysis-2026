@@ -2,8 +2,9 @@
 
 ## Official Documentation
 
+- SPAdes Documentation
 - MEGAHIT Documentation
-- SeqKit Documentation
+- Bowtie2 Documentation
 
 ---
 
@@ -15,14 +16,7 @@
 
 ---
 
-## Books
-
-- Bioinformatics Data Skills
-- Metagenomics
-
----
-
 ## Useful Websites
 
-- EMBL-EBI Training
+- EMBL-EBI
 - Galaxy Training Network
