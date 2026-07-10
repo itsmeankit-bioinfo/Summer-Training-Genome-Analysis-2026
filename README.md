@@ -82,5 +82,4 @@ Summer-Training-Genome-Analysis-2026
 **Ankit Raj**
 
 M.Sc. Bioinformatics
-
-Graphic Era University
+Graphic Era Deemed to be University
